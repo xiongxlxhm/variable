@@ -26,5 +26,15 @@ namespace variable
         {
             this.InitializeComponent();
         }
+
+        private void c1_Click(object sender, RoutedEventArgs e)
+        {
+            gird.MaximumRowsOrColumns = 3;
+        }
+
+        private void c2_Click(object sender, RoutedEventArgs e)
+        {
+            gird.MaximumRowsOrColumns = 4;
+        }
     }
 }

@@ -7,7 +7,36 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <StackPanel>
+            <StackPanel></StackPanel>
+            <Button Name="c1" Content="clik1" Click="c1_Click" FontSize="48"></Button>
+            <Button Name="c2" Content="clik2" Click="c2_Click" FontSize="48"></Button>
+            <VariableSizedWrapGrid  Name="gird"
+                                    ItemWidth="150"
+                                    ItemHeight="100"
+                                    MaximumRowsOrColumns="3"
+                                    Orientation="Horizontal">
+                <Rectangle Fill="Red"
+                           VariableSizedWrapGrid.RowSpan="2"></Rectangle>
+                <Rectangle Fill="Blue"></Rectangle>
+                <Rectangle Fill="Green" 
+                           VariableSizedWrapGrid.RowSpan="3"></Rectangle>
+                <Rectangle Fill="Gray"
+                           VariableSizedWrapGrid.RowSpan="3"></Rectangle>
+                <Rectangle Fill="Yellow"></Rectangle>
+                <Rectangle Fill="LightGray"
+                           VariableSizedWrapGrid.RowSpan="2"></Rectangle>
+                <Rectangle Fill="DarkOrange"></Rectangle>
+                <Rectangle Fill="Purple"
+                           VariableSizedWrapGrid.RowSpan="3"></Rectangle>
+                <Rectangle Fill="Brown"
+                           VariableSizedWrapGrid.RowSpan="2"></Rectangle>
+                <Rectangle Fill="OrangeRed"
+                           VariableSizedWrapGrid.RowSpan="2"></Rectangle>
+            </VariableSizedWrapGrid>
+            
+        </StackPanel>
 
     </Grid>
 </Page>
